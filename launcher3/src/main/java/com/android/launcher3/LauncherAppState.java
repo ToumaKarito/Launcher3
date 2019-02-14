@@ -20,6 +20,7 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.os.SystemProperties;
 import android.os.UserManager;
 import android.util.Log;
@@ -137,7 +138,7 @@ public class LauncherAppState {
 
     //判断是否有AllApp按钮
     public static boolean isDisableAllApps() {
-        return Utilities.isHaveAllApp;
+        return sContext.getSharedPreferences(Utilities.SP_NAME, 0).getBoolean(Utilities.ALL_APP_KEY,true);
     }
 
     public LauncherAccessibilityDelegate getAccessibilityDelegate() {

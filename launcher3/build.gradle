@@ -25,6 +25,10 @@ android {
         versionName "7.2-5056751"
     }
     buildTypes {
+        debug{
+            minifyEnabled false
+            debuggable true
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'

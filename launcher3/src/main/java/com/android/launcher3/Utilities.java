@@ -114,8 +114,11 @@ public final class Utilities {
 
     public static final String ALLOW_ROTATION_PREFERENCE_KEY = "pref_allowRotation";
     public static final String IS_HAVE_ALLAPP = "is_have_allapp";
-    public static boolean isHaveAllApp = true;
-
+    //@:lmy
+    // 数据库中 存储的 是否有抽屉的Key
+    public static final String ALL_APP_KEY = "ro.wind.launcher3.ishome2";
+    public static final String SP_NAME = "lmy_launcher";
+    //:@//
     public static boolean isPropertyEnabled(String propertyName) {
         return Log.isLoggable(propertyName, Log.VERBOSE);
     }

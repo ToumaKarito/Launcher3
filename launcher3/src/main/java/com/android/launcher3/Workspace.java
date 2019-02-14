@@ -4456,7 +4456,7 @@ public class Workspace extends PagedView
 
     protected String getPageIndicatorDescription() {
         String settings = getResources().getString(R.string.settings_button_text);
-        Log.d("lmy", getCurrentPageDescription() + ", " + settings);
+        Log.d("lmy--", getCurrentPageDescription() + ", " + settings);
         return getCurrentPageDescription() + ", " + settings;
     }
 
