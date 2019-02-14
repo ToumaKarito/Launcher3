@@ -29,6 +29,7 @@ import com.android.launcher3.compat.LauncherAppsCompat;
 import com.android.launcher3.compat.PackageInstallerCompat;
 import com.android.launcher3.compat.UserManagerCompat;
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 import java.lang.ref.WeakReference;
 

@@ -35,6 +35,7 @@ import android.view.ViewConfiguration;
 import android.view.inputmethod.InputMethodManager;
 
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 import java.util.ArrayList;
 import java.util.HashSet;

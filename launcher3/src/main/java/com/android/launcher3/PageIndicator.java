@@ -23,6 +23,8 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 
+import com.lmy.launcher3.R;
+
 import java.util.ArrayList;
 
 public class PageIndicator extends LinearLayout {

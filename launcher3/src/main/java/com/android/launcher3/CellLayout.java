@@ -54,6 +54,7 @@ import com.android.launcher3.accessibility.DragAndDropAccessibilityDelegate;
 import com.android.launcher3.accessibility.FolderAccessibilityHelper;
 import com.android.launcher3.accessibility.WorkspaceAccessibilityHelper;
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

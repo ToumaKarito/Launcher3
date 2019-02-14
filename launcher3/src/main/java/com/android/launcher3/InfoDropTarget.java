@@ -21,6 +21,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 
 import com.android.launcher3.compat.UserHandleCompat;
+import com.lmy.launcher3.R;
 
 public class InfoDropTarget extends ButtonDropTarget {
 

@@ -25,6 +25,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewParent;
 
+import com.lmy.launcher3.R;
+
 public class Stats {
 
     /**

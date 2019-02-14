@@ -39,6 +39,7 @@ import android.view.animation.LinearInterpolator;
 import android.widget.TextView;
 
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 /**
  * Implements a DropTarget.

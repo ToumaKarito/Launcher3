@@ -26,7 +26,7 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import com.android.launcher3.ExtendedEditText;
-import com.android.launcher3.R;
+import com.lmy.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.util.Thunk;
 

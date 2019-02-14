@@ -32,6 +32,7 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 import java.util.ArrayList;
 import java.util.List;

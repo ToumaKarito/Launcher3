@@ -40,7 +40,7 @@ import android.widget.TextView;
 import com.android.launcher3.AppInfo;
 import com.android.launcher3.BubbleTextView;
 import com.android.launcher3.Launcher;
-import com.android.launcher3.R;
+import com.lmy.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.util.Thunk;
 

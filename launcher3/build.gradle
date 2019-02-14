@@ -18,7 +18,7 @@ android {
     //以上是为了找到android.os.SystemProperties这个隐藏的类
 
     defaultConfig {
-        applicationId "com.android.launcher3"
+        applicationId "com.lmy.launcher3"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 7

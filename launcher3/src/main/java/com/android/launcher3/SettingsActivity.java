@@ -24,6 +24,8 @@ import android.preference.PreferenceFragment;
 import android.preference.SwitchPreference;
 import android.util.Log;
 
+import com.lmy.launcher3.R;
+
 /**
  * Settings activity for Launcher. Currently implements the following setting: Allow rotation
  */

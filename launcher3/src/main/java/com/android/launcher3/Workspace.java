@@ -73,6 +73,7 @@ import com.android.launcher3.util.Thunk;
 import com.android.launcher3.util.WallpaperUtils;
 import com.android.launcher3.widget.PendingAddShortcutInfo;
 import com.android.launcher3.widget.PendingAddWidgetInfo;
+import com.lmy.launcher3.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

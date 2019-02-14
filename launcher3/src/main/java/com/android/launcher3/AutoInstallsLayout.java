@@ -38,6 +38,7 @@ import android.util.Patterns;
 import com.android.launcher3.LauncherProvider.SqlArguments;
 import com.android.launcher3.LauncherSettings.Favorites;
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

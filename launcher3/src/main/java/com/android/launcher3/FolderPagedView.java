@@ -31,6 +31,7 @@ import com.android.launcher3.FocusHelper.PagedFolderKeyEventListener;
 import com.android.launcher3.PageIndicator.PageMarkerResources;
 import com.android.launcher3.Workspace.ItemOperator;
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

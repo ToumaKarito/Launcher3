@@ -33,6 +33,7 @@ import com.android.launcher3.allapps.AllAppsContainerView;
 import com.android.launcher3.util.UiThreadCircularReveal;
 import com.android.launcher3.util.Thunk;
 import com.android.launcher3.widget.WidgetsContainerView;
+import com.lmy.launcher3.R;
 
 import java.util.HashMap;
 

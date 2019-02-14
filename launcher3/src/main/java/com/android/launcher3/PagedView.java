@@ -50,6 +50,7 @@ import android.view.animation.Interpolator;
 
 import com.android.launcher3.util.LauncherEdgeEffect;
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 import java.util.ArrayList;
 

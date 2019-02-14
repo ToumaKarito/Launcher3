@@ -22,6 +22,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.LinearLayout;
 
+import com.lmy.launcher3.R;
+
 /**
  * A base container view, which supports resizing.
  */

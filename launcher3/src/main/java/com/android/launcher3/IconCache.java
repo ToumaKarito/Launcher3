@@ -48,6 +48,7 @@ import com.android.launcher3.compat.UserManagerCompat;
 import com.android.launcher3.model.PackageItemInfo;
 import com.android.launcher3.util.ComponentKey;
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 import java.util.Collections;
 import java.util.HashMap;

@@ -1,5 +1,6 @@
 package com.android.launcher3.accessibility;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.appwidget.AppWidgetProviderInfo;
@@ -32,11 +33,11 @@ import com.android.launcher3.LauncherAppWidgetInfo;
 import com.android.launcher3.LauncherModel;
 import com.android.launcher3.LauncherSettings;
 import com.android.launcher3.PendingAddItemInfo;
-import com.android.launcher3.R;
 import com.android.launcher3.ShortcutInfo;
 import com.android.launcher3.UninstallDropTarget;
 import com.android.launcher3.Workspace;
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 import java.util.ArrayList;
 
@@ -253,6 +254,7 @@ public class LauncherAccessibilityDelegate extends AccessibilityDelegate impleme
         return actions;
     }
 
+    @SuppressLint("StringFormatMatches")
     @Thunk void performResizeAction(int action, View host, LauncherAppWidgetInfo info) {
         CellLayout.LayoutParams lp = (CellLayout.LayoutParams) host.getLayoutParams();
         CellLayout layout = (CellLayout) host.getParent().getParent();

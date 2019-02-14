@@ -31,6 +31,7 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.animation.DecelerateInterpolator;
 
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 import java.util.HashMap;
 

@@ -50,6 +50,7 @@ import com.android.photos.BitmapRegionTileSource;
 import com.android.photos.BitmapRegionTileSource.BitmapSource;
 import com.android.photos.BitmapRegionTileSource.BitmapSource.InBitmapProvider;
 import com.android.photos.views.TiledImageRenderer.TileSource;
+import com.lmy.launcher3.R;
 
 import java.util.Collections;
 import java.util.Set;

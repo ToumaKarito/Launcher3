@@ -56,6 +56,7 @@ import com.android.launcher3.compat.UserManagerCompat;
 import com.android.launcher3.config.ProviderConfig;
 import com.android.launcher3.util.ManagedProfileHeuristic;
 import com.android.launcher3.util.Thunk;
+import com.lmy.launcher3.R;
 
 import java.io.File;
 import java.net.URISyntaxException;
