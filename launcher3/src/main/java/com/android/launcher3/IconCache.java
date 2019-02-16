@@ -34,6 +34,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Path;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
@@ -569,7 +570,36 @@ public class IconCache {
                 entry.contentDescription = mUserManager.getBadgedLabelForUser(entry.title, user);
             }
         }
+        entry.icon = createBgIcon(entry.icon);
         return entry;
+    }
+
+    private Bitmap createBgIcon(Bitmap bitmap) {
+        if (bitmap == null) {
+            return null;
+        }
+        int width = bitmap.getWidth();
+        int height = bitmap.getHeight();
+        Bitmap request = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(request);
+        Paint paint = new Paint();
+        //画圆角
+        Path path = new Path();
+        path.moveTo(24, 0);//左上角仙的起点
+        path.lineTo(width - 24, 0);//连接到右上角
+        path.quadTo(width, 0, width, 24);//贝塞尔曲线画圆角
+        path.lineTo(width, height - 24);
+        path.quadTo(width, height, width - 24, height);
+        path.lineTo(24, height);
+        path.quadTo(0, height, 0, height - 24);
+        path.lineTo(0, 24);
+        path.quadTo(0, 0, 24, 0);
+        canvas.clipPath(path);
+        //加背景色
+        canvas.drawColor(Color.RED);
+        //画icon
+        canvas.drawBitmap(bitmap, 0, 0, paint);
+        return request;
     }
 
     /**
