@@ -20,13 +20,13 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.graphics.RectF;
-import android.support.v4.util.Pools.Pool;
-import android.support.v4.util.Pools.SynchronizedPool;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.LongSparseArray;
 import android.view.View;
 import android.view.WindowManager;
+
+import androidx.core.util.Pools;
 
 import com.android.gallery3d.common.Utils;
 import com.android.gallery3d.glrenderer.BasicTexture;
@@ -68,7 +68,7 @@ public class TiledImageRenderer {
     private static final int STATE_RECYCLING = 0x20;
     private static final int STATE_RECYCLED = 0x40;
 
-    @Thunk static Pool<Bitmap> sTilePool = new SynchronizedPool<Bitmap>(64);
+    @Thunk static Pools.Pool<Bitmap> sTilePool = new Pools.SynchronizedPool<Bitmap>(64);
 
     // TILE_SIZE must be 2^N
     @Thunk int mTileSize;

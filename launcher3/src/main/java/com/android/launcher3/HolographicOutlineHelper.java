@@ -178,7 +178,7 @@ public class HolographicOutlineHelper {
             mCanvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
         }
 
-        mCanvas.save(Canvas.MATRIX_SAVE_FLAG);
+        mCanvas.save();
         mCanvas.scale(view.getScaleX(), view.getScaleY());
         mCanvas.translate(-rect.left, -rect.top);
         icon.draw(mCanvas);

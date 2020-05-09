@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
 
     //以下是为了找到android.os.SystemProperties这个隐藏的类
     String SDK_DIR = System.getenv("ANDROID_SDK_HOME")
@@ -13,14 +13,14 @@ android {
         SDK_DIR = props.get('sdk.dir');
     }
     dependencies {
-        provided files("${SDK_DIR}/platforms/android-21/data/layoutlib.jar")
+        compileOnly files("${SDK_DIR}/platforms/android-29/data/layoutlib.jar")
     }
     //以上是为了找到android.os.SystemProperties这个隐藏的类
 
     defaultConfig {
         applicationId "com.lmy.launcher3"
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 29
         versionCode 7
         versionName "7.2-5056751"
     }
@@ -37,8 +37,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.1.0'
-    compile 'com.android.support:recyclerview-v7:23.1.0'
-    compile project(':wallpaperpick')
+    implementation project(':wallpaperpick')
+    //包含RecyclerView
+    implementation 'com.google.android.material:material:1.1.0'
 }

@@ -21,12 +21,13 @@ import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.InsetDrawable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView.State;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.launcher3.BaseContainerView;
 import com.android.launcher3.CellLayout;
@@ -106,7 +107,7 @@ public class WidgetsContainerView extends BaseContainerView
         // This extends the layout space so that preloading happen for the {@link RecyclerView}
         mView.setLayoutManager(new LinearLayoutManager(getContext()) {
             @Override
-            protected int getExtraLayoutSpace(State state) {
+            protected int getExtraLayoutSpace(RecyclerView.State state) {
                 DeviceProfile grid = mLauncher.getDeviceProfile();
                 return super.getExtraLayoutSpace(state)
                         + grid.availableHeightPx * PRELOAD_SCREEN_HEIGHT_MULTIPLE;

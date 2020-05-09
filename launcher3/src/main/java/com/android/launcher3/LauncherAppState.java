@@ -21,7 +21,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.os.SystemProperties;
 import android.os.UserManager;
 import android.util.Log;
 

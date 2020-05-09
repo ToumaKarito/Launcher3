@@ -16,8 +16,10 @@
 package com.android.launcher3.allapps;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.android.launcher3.AppInfo;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.LauncherAppState;

@@ -15,13 +15,11 @@
  */
 package com.android.launcher3.widget;
 
-import android.support.v7.widget.RecyclerView.ViewHolder;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
-public class WidgetsRowViewHolder extends ViewHolder {
+import androidx.recyclerview.widget.RecyclerView;
+
+public class WidgetsRowViewHolder extends RecyclerView.ViewHolder {
 
     ViewGroup mContent;
 
