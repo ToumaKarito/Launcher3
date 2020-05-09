@@ -19,3 +19,11 @@ allprojects {
         google()
     }
 }
+ext {
+    compileSdkVersion = 29
+    targetSdkVersion = 29
+    buildToolsVersion = "29.0.3"
+    minSdkVersion = 16
+    versionCode = 1
+    versionName = '1.0.1'
+}

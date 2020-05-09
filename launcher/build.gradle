@@ -1,13 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
-
     //以下是为了找到android.os.SystemProperties这个隐藏的类
     String SDK_DIR = System.getenv("ANDROID_SDK_HOME")
     //("TAG", "SDK_DIR = " + SDK_DIR );
-    if(SDK_DIR == null) {
+    if (SDK_DIR == null) {
         Properties props = new Properties()
         props.load(new FileInputStream(project.rootProject.file("local.properties")))
         SDK_DIR = props.get('sdk.dir');
@@ -17,15 +14,17 @@ android {
     }
     //以上是为了找到android.os.SystemProperties这个隐藏的类
 
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
         applicationId "com.xiaoyu.launcher"
-        minSdkVersion 16
-        targetSdkVersion 29
-        versionCode 7
-        versionName "7.2-5056751"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
     }
     buildTypes {
-        debug{
+        debug {
             minifyEnabled false
             debuggable true
         }
