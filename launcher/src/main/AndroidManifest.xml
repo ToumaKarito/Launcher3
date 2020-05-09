@@ -73,7 +73,7 @@
         android:supportsRtl="true" >
 
         <activity
-            android:name="com.android.launcher3.Launcher"
+            android:name="com.xiaoyu.launcher3.Launcher"
             android:launchMode="singleTask"
             android:clearTaskOnLaunch="true"
             android:stateNotNeeded="true"
@@ -114,7 +114,7 @@
         -->
 
         <activity
-            android:name="com.android.launcher3.ToggleWeightWatcher"
+            android:name="com.xiaoyu.launcher3.ToggleWeightWatcher"
             android:label="@string/toggle_weight_watcher"
             android:enabled="@bool/debug_memory_enabled"
             android:icon="@mipmap/ic_launcher_home">
@@ -126,7 +126,7 @@
         </activity>
 
         <activity
-            android:name="com.android.launcher3.WallpaperPickerActivity"
+            android:name="com.xiaoyu.launcher3.WallpaperPickerActivity"
             android:theme="@style/Theme.WallpaperPicker"
             android:label="@string/pick_wallpaper"
             android:icon="@mipmap/ic_launcher_wallpaper"
@@ -139,7 +139,7 @@
         </activity>
 
         <activity
-            android:name="com.android.launcher3.WallpaperCropActivity"
+            android:name="com.xiaoyu.launcher3.WallpaperCropActivity"
             android:theme="@style/Theme.WallpaperCropper"
             android:label="@string/crop_wallpaper"
             android:icon="@mipmap/ic_launcher_wallpaper"
@@ -153,7 +153,7 @@
         </activity>
 
         <activity
-            android:name="com.android.launcher3.SettingsActivity"
+            android:name="com.xiaoyu.launcher3.SettingsActivity"
             android:label="@string/settings_button_text"
             android:autoRemoveFromRecents="true"
             android:process=":settings_process">
@@ -161,7 +161,7 @@
 
         <!-- Debugging tools -->
         <activity
-            android:name="com.android.launcher3.MemoryDumpActivity"
+            android:name="com.xiaoyu.launcher3.MemoryDumpActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:label="@string/debug_memory_activity"
             android:enabled="@bool/debug_memory_enabled"
@@ -175,13 +175,13 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.android.launcher3.MemoryTracker"
+        <service android:name="com.xiaoyu.launcher3.MemoryTracker"
             android:enabled="@bool/debug_memory_enabled"
             >
         </service>
 
         <receiver
-            android:name="com.android.launcher3.WallpaperChangedReceiver">
+            android:name="com.xiaoyu.launcher3.WallpaperChangedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.WALLPAPER_CHANGED" />
             </intent-filter>
@@ -189,7 +189,7 @@
 
         <!-- Intent received used to install shortcuts from other applications -->
         <receiver
-            android:name="com.android.launcher3.InstallShortcutReceiver"
+            android:name="com.xiaoyu.launcher3.InstallShortcutReceiver"
             android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">
             <intent-filter>
                 <action android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
@@ -197,13 +197,13 @@
         </receiver>
 
         <!-- Intent received used to initialize a restored widget -->
-        <receiver android:name="com.android.launcher3.AppWidgetsRestoredReceiver" >
+        <receiver android:name="com.xiaoyu.launcher3.AppWidgetsRestoredReceiver" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_HOST_RESTORED"/>
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.android.launcher3.StartupReceiver" >
+        <receiver android:name="com.xiaoyu.launcher3.StartupReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -211,7 +211,7 @@
 
         <!-- The settings provider contains Home's data, like the workspace favorites -->
         <provider
-            android:name="com.android.launcher3.LauncherProvider"
+            android:name="com.xiaoyu.launcher3.LauncherProvider"
             android:authorities="com.android.launcher3.settings"
             android:exported="true"
             android:writePermission="com.android.launcher3.permission.WRITE_SETTINGS"

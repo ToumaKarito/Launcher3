@@ -18,7 +18,7 @@ android {
     //以上是为了找到android.os.SystemProperties这个隐藏的类
 
     defaultConfig {
-        applicationId "com.lmy.launcher3"
+        applicationId "com.xiaoyu.launcher"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 7
